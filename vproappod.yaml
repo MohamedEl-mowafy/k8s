@@ -1,0 +1,15 @@
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: vproapp12
+  labels:
+    app: vproapp12
+
+spec:
+  containers:
+    - name: appcontainer
+      image: mohamedelmowafy/vprofileapp:V1
+      ports:
+        - name: vproapp-port
+          containerPort: 8080
